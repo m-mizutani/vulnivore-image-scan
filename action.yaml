@@ -21,6 +21,6 @@ runs:
         curl -X POST \
           -H "Content-Type: application/json" \
           -H "Authorization: Bearer $ID_TOKEN" \
-          -H "X-Vulnivore-Installation-ID: ${{ input.installation_id }}" \
+          -H "X-Vulnivore-Installation-ID: ${{ inputs.installation_id }}" \
           -d @${{ inputs.filepath }} \
           ${{ inputs.url }}
